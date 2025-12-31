@@ -2,9 +2,9 @@ services:
   - type: web
     name: n8n
     env: docker
-    region: frankfurt
-    plan: free
-    branch: main
+    region: frankfurt # optional (defaults to oregon)
+    plan: free # optional (defaults to starter)
+    branch: main # optional (defaults to master)
     numInstances: 1
     healthCheckPath: /healthz
     envVars:
@@ -30,16 +30,14 @@ services:
         fromDatabase:
           name: n8nDB
           property: password
-      - key: DB_POSTGRESDB_SCHEMA
-        value: public
       - key: PORT
         value: 5678
       - key: N8N_LOG_LEVEL
         value: info
       - key: GENERIC_TIMEZONE
-        value: Africa/Conakry
+        value: Europe/Paris
       - key: TZ
-        value: Africa/Conakry
+        value: Europe/Paris
       - key: N8N_DEFAULT_LOCALE
         value: fr
       - key: N8N_ENCRYPTION_KEY
@@ -47,5 +45,5 @@ services:
 
 databases:
   - name: n8nDB
-    region: frankfurt
+    region: frankfurt # optional (defaults to oregon)
     plan: free
