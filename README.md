@@ -12,7 +12,7 @@ Il inclut une base PostgreSQL gratuite et une configuration adaptée pour la lan
 ## ✨ Fonctionnalités
 - Déploiement automatique via Render Blueprint
 - Base de données PostgreSQL gratuite incluse
-- Configuration en français (`N8N_DEFAULT_LOCALE=fr`)
+- Interface en français (`N8N_DEFAULT_LOCALE=fr`)
 - Fuseau horaire Africa/Conakry
 - Clé de chiffrement générée automatiquement pour sécuriser les données
 - Vérification de santé via `/healthz`
