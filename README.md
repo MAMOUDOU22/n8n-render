@@ -1,9 +1,11 @@
 # 🚀 Déploiement de n8n sur Render
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/MAMOUDOU22/n8n-render)
+
 ## 📖 Description
 Ce projet permet de déployer [n8n](https://n8n.io), un outil open-source d’automatisation de workflows, 
 directement sur la plateforme Render grâce à un fichier `render.yaml`.  
-Il inclut une base PostgreSQL gratuite et une configuration adaptée pour la langue française et le fuseau horaire Europe/Paris.
+Il inclut une base PostgreSQL gratuite et une configuration adaptée pour la langue française et le fuseau horaire **Africa/Conakry**.
 
 ---
 
@@ -11,7 +13,7 @@ Il inclut une base PostgreSQL gratuite et une configuration adaptée pour la lan
 - Déploiement automatique via Render Blueprint
 - Base de données PostgreSQL gratuite incluse
 - Configuration en français (`N8N_DEFAULT_LOCALE=fr`)
-- Fuseau horaire Europe/Paris
+- Fuseau horaire Africa/Conakry
 - Clé de chiffrement générée automatiquement pour sécuriser les données
 - Vérification de santé via `/healthz`
 
@@ -29,5 +31,5 @@ Avant de commencer, assurez-vous d’avoir :
 
 ### 1. Cloner le repo
 ```bash
-git clone https://github.com/<ton-utilisateur>/<ton-repo>.git
-cd <ton-repo>
+git clone https://github.com/MAMOUDOU22/n8n-render.git
+cd n8n-render
