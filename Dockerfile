@@ -1,7 +1,11 @@
-FROM n8nio/n8n
-git clone https://github.com/MAMOUDOU22/n8n-render.git
-cd n8n-render
-echo "FROM n8nio/n8n" > Dockerfile
-git add Dockerfile
-git commit -m "Add Dockerfile for n8n"
-git push origin main
+# Utiliser l'image officielle n8n
+FROM n8nio/n8n:latest
+
+# Définir le fuseau horaire pour la Guinée
+ENV TZ=Africa/Conakry
+
+# Utiliser un utilisateur non-root pour plus de sécurité
+USER node
+
+# Commande de démarrage par défaut
+CMD ["n8n"]
